@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initlal-scale=1.0">
+        <title>Página demo</title>
+    </head>
+    <body>
+        <h1>Demo de página</h1>
+    </body>
+</html>
+
+<script>
+    let datos = {nom:"Eli", ap:"Pizarro"}
+    let frutas = ["Pera", "Naranjas"]
+
+    //Itera por todo el array, pasando como parámetros el elemento, el índice del array y el propio array
+    /*frutas.forEach(function(elemento, indice, array){
+        console.log(elemento)
+        console.log(indice)
+        console.log(array)
+        console.log(elemento, indice)
+    })*/
+
+    function imprimirArray(array){
+        array.forEach(function(elemento, indice){
+            console.log(elemento,indice)
+        })
+    }
+
+    imprimirArray(frutas)
+    //Agregar un elemento al final
+    let nuevo = frutas.push('Piña')
+    let nuevo2 = frutas.push("Fresa")
+
+    imprimirArray(frutas)
+
+    //Eliminar el último elemento
+    frutas.pop()
+
+    //agregar al principio
+    let agregar =frutas.unshift("Mango")
+
+    //eliminar primero
+    let eliminar = frutas.shift()
+
+    imprimirArray(frutas)
+
+    //Encontrar elemento en una posición
+    let buscar = frutas.indexOf("Pera")
+    console.log(buscar)
+
+
+
+</script>

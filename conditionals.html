@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initlal-scale=1.0">
+        <title>Página demo</title>
+    </head>
+    <body>
+        <h1>Demo de página</h1>
+    </body>
+</html>
+
+<script>
+
+    function clasificarEdad(edad){
+        if(edad <=0 || edad<=101){
+        alert("Edad no válida")
+    }else if(edad == 999){
+        alert("Niño")
+    }else{
+        alert("Default option")
+    }
+
+    }
+
+    function frutaSwitch(fruta){
+        switch(fruta){
+            case 'Naranja':
+                alert("Naranja")
+                break;
+            default:
+                alert("Nada")    
+        }
+    }
+
+
+    let edad = prompt("Dame tu edad")
+    clasificarEdad(edad)
+
+    let fruta = prompt("Dame la fruta")
+    frutaSwitch(fruta)
+    
+
+</script>

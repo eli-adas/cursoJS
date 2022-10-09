@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initlal-scale=1.0">
+        <title>Página demo</title>
+    </head>
+    <body>
+        <h1>Demo de página</h1>
+    </body>
+</html>
+
+<script>
+
+    let datos = [0,3,4,6,7]
+
+for(let x=0; x<datos.length ;x++){
+    console.log(datos[x])
+}
+
+    const object = {a:1, b:2, c:3, d:4, nom:'Eli'}
+
+    //for each
+    for(let pro in object){
+        console.log(`${pro}: ${object[pro]}`)
+    }
+
+    let frutas = ["Naranjas", "Peras", "Melones"]
+
+    frutas.forEach(function(elemento, indice){
+        console.log(elemento, indice)
+    })
+</script>

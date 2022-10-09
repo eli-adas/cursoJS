@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initlal-scale=1.0">
+        <title>Página demo</title>
+    </head>
+    <body>
+        <h1>Demo de página</h1>
+    </body>
+</html>
+
+<script>
+    /* Si ejecutamos esté codigo, se ejcutaria el primer proceso, despues el tercero y luego el segudno por el time out
+    let x = 10
+    console.log("1. Primer proceso")
+
+    //Está funcion le da un retraso en la ejecución.
+    setTimeout(()=>{
+        x = x * 3 + 2
+        console.log("2. Segundo proceso en ejecución")
+    })
+
+    console.log("3. Tercer proceso")
+    */
+
+    //Las promesas llevan 2 parámetros, resolve (si funcion lo que se obtiene de la función) y el reject por si no funciona
+
+    let x = 10
+    console.log("1. Primer proceso")
+    
+    const promesa = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        x = x * 3 + 2
+        console.log("2. Segundo proceso en ejecución")
+        resolve(x)
+    });
+    },3000)
+
+    //la variable res toma el resultado de resolve
+    promesa.then(res =>{
+        console.log("3. Tercer proceso" + res)
+    })
+    
+
+    
+
+</script>
